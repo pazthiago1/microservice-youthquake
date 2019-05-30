@@ -2,33 +2,42 @@ package com.youthquake.microservice.microservice.domain;
 
 import com.fasterxml.jackson.annotation.JsonIgnoreProperties;
 import com.fasterxml.jackson.annotation.JsonProperty;
+import com.opencsv.bean.CsvBind;
 
 @JsonIgnoreProperties(ignoreUnknown = true)
 public class Target {
 
 	
 	@JsonProperty
+	@CsvBind
 	private String idTarget;
 	
 	@JsonProperty
+	@CsvBind
 	private String name;
 	
 	@JsonProperty
+	@CsvBind
 	private String description;
 	
 	@JsonProperty
+	@CsvBind
 	private String dtStart;
 	
 	@JsonProperty
+	@CsvBind
 	private String dtEnd;
 	
 	@JsonProperty
+	@CsvBind
 	private String value;
 	
 	@JsonProperty
+	@CsvBind
 	private String valueAccumulated;
 	
 	@JsonProperty
+	@CsvBind
 	private String percentage;
 	
 	public Target(){}
