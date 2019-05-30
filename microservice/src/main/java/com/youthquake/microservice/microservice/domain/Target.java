@@ -8,7 +8,7 @@ public class Target {
 
 	
 	@JsonProperty
-	private long idTarget;
+	private String idTarget;
 	
 	@JsonProperty
 	private String name;
@@ -23,21 +23,21 @@ public class Target {
 	private String dtEnd;
 	
 	@JsonProperty
-	private int value;
+	private String value;
 	
 	@JsonProperty
-	private int valueAccumulated;
+	private String valueAccumulated;
 	
 	@JsonProperty
-	private int percentage;
+	private String percentage;
 	
 	public Target(){}
 
-	public long getIdTarget() {
+	public String getIdTarget() {
 		return idTarget;
 	}
 
-	public void setIdTarget(long idTarget) {
+	public void setIdTarget(String idTarget) {
 		this.idTarget = idTarget;
 	}
 
@@ -73,27 +73,34 @@ public class Target {
 		this.dtEnd = dtEnd;
 	}
 
-	public int getValue() {
+	public String getValue() {
 		return value;
 	}
 
-	public void setValue(int value) {
+	public void setValue(String value) {
 		this.value = value;
 	}
 
-	public int getValueAccumulated() {
+	public String getValueAccumulated() {
 		return valueAccumulated;
 	}
 
-	public void setValueAccumulated(int valueAccumulated) {
+	public void setValueAccumulated(String valueAccumulated) {
 		this.valueAccumulated = valueAccumulated;
 	}
 
-	public int getPercentage() {
+	public String getPercentage() {
 		return percentage;
 	}
 
-	public void setPercentage(int percentage) {
+	public void setPercentage(String percentage) {
 		this.percentage = percentage;
+	}
+
+	@Override
+	public String toString() {
+		return "Target [idTarget=" + idTarget + ", name=" + name + ", description=" + description + ", dtStart="
+				+ dtStart + ", dtEnd=" + dtEnd + ", value=" + value + ", valueAccumulated=" + valueAccumulated
+				+ ", percentage=" + percentage + "]";
 	}
 }
