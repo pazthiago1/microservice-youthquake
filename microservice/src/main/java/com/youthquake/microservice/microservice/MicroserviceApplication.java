@@ -15,6 +15,6 @@ public class MicroserviceApplication {
 				.run(MicroserviceApplication.class, args)
 				.getBean(TargetMicroservice.class);
 		
-		ts.getTargetUserToCSV(2);
+		ts.getTargetUserToCSV();
 	}
 }
